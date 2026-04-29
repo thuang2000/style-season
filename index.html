@@ -109,10 +109,12 @@
 
 			//select the background of the page
 			const html  = document.querySelector("html");
+			const banner = document.querySelector("header > h2");
 
 			switch(season){
 				case "spring": 
 					html.style.backgroundColor = "#2B7129";
+					banner.textContent = "Spring Forward!";
 				break;
 			}
 
