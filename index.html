@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Style Season by NAME HERE</title>
+		<title>Style Season by Tianxiang Huang</title>
 		<meta charset="utf-8">
 		<meta name="robots" content="noindex,nofollow">
 		<meta name="viewport" content="width=device-width">
@@ -46,6 +46,7 @@
 				<li class="seasons"><a href="Summer" onclick="changeSeason(this); return false;">Summer</a></li>
 				<li class="seasons"><a href="Fall" onclick="changeSeason(this); return false;">Fall</a></li>
 				<li class="seasons"><a href="Winter" onclick="changeSeason(this); return false;">Winter</a></li>
+				<li class="seasons"><a href="Default" onclick="changeSeason(this); return false;">Default</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -92,7 +93,7 @@
 	</p>
 	<footer>
 	<p><small>&copy; 2026 by 
-		NAME HERE, All Rights Reserved ~ 
+		Tianxiang Huang, All Rights Reserved ~ 
 		<a id="html-checker" href="#">Check HTML</a> ~ 
 		<a id="css-checker" href="#">Check CSS</a></small>
 	</p>
@@ -119,6 +120,24 @@
 					html.style.backgroundColor = "#2B7129";
 					banner.textContent = "Spring Forward!";
 				break;
+				case "summer":
+					html.style.backgroundColor = "#EBA52B";
+					banner.textContent = "Hot for the Summer!";
+				break;
+				case "fall":
+					html.style.backgroundColor = "#A81124";
+					banner.textContent = "Chill fall!";
+				break;
+				case "winter":
+					html.style.backgroundColor = "#005393";
+					banner.textContent = "Cool winter!";
+				break;
+				default:
+					html.style.backgroundColor = "gray";
+					banner.textContent = "Outfitter for All Seasons!";
+
+
+
 			}
 
 			logo.src = "images/" + season + ".gif";
